@@ -1,0 +1,43 @@
+---
+title: Quarto extension for LNCS
+format:
+    commonmark:
+        variant: -raw_html+tex_math_dollars
+        wrap: none
+---
+
+## Creating a New Article
+
+To use this project and format template:
+
+```bash
+quarto use template pat-alt/quarto-ecml
+```
+
+This will create a new directory with an example document that uses this format.
+
+## Using with an Existing Document
+
+To add this format to an existing document:
+
+```bash
+quarto add pat-alt/quarto-ecml
+```
+
+Then, add the format to your document options:
+
+```yaml
+format:
+  quarto-ecml-pdf: default
+```    
+
+## Options
+
+The template provides the following YAML options that can be specified in documents headers or configuration files:
+
+1. `nolinks`: If set to `true` (default), do not include links in the PDF output.
+
+## Example
+
+Here is the source code for a minimal sample document: [template.qmd](template.qmd).
+

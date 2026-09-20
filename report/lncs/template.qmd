@@ -1,0 +1,135 @@
+---
+title: Recent Advances in Underwater Basket Weaving
+title-running: Underwater Basket Weaving
+format:
+  pdf:
+    keep-tex: true
+    documentclass: llncs
+    classoption: runningheads
+    pdf-engine: pdflatex
+    cite-method: natbib
+    # biblio-style: plainnat
+    biblio-style: splncs04
+    natbiboptions: "super,sort,compress,comma"
+    # natbiboptions: "super,sort,compress,comma,square"
+bibliography: bibliography.bib
+author:
+  - name: André Lauren Benjamin
+    affiliations:
+      - name: Fictional Southern University
+        url: user@example.com
+abstract: |
+  The abstract should briefly summarize the contents of the paper.
+---
+
+## Introduction {#sec-intro}
+
+### Main Contributions
+
+Please note that the first paragraph of a section or subsection is not indented. The first paragraph that follows a table, figure, equation etc. does not need an indent, either.
+
+Subsequent paragraphs, however, are indented.
+
+## Related Work
+
+### Basket Weaving
+
+#### Underwater Basket Weaving
+
+Only two levels of headings should be numbered. Lower level headings remain unnumbered; they are formatted as run-in headings.
+
+The contribution should contain no more than four levels of headings. @tbl-headings gives a summary of all heading levels.
+
+::: {#tbl-headings tbl-pos='t'}
+```{=latex}
+\begin{tabular}{lll}
+\toprule
+Heading level &  Example & Font size and style\\
+\midrule
+Title (centered) &  {\Large\bfseries Lecture Notes} & 14 point, bold\\
+1st-level heading &  {\large\bfseries 1 Introduction} & 12 point, bold\\
+2nd-level heading & {\bfseries 2.1 Printing Area} & 10 point, bold\\
+3rd-level heading & {\bfseries Run-in Heading in Bold.} Text follows & 10 point, bold\\
+4th-level heading & {\itshape Lowest Level Heading.} Text follows & 10 point, italic\\
+\bottomrule
+\end{tabular}
+```
+
+Table captions should be placed above the tables.
+:::
+
+<!-- | Heading level | Example | Font size and style |
+|------|------|------|
+| Title (centered) | {\Large\bfseries Lecture Notes} | 14 point, bold |
+| 1st-level heading | {\large\bfseries 1 Introduction} | 12 point, bold |
+| 2nd-level heading | {\bfseries 2.1 Printing Area} | 10 point, bold |
+| 3rd-level heading | {\bfseries Run-in Heading in Bold.} Text follows | 10 point, bold |
+| 4th-level heading | {\itshape Lowest Level Heading.} Text follows | 10 point, italic |
+
+: Table captions should be placed above the
+tables. {#tbl-headings} -->
+
+## Recent Advances from the Mariana Trench
+
+Displayed equations are centered and set on a separate line.
+
+$$
+x + y = z
+$$ {#eq-linear}
+<!-- Please try to avoid rasterized images for line-art diagrams and schemas. Whenever possible, use vector graphics instead (see @fig-duck). -->
+
+<!-- ![A figure caption is always placed below the illustration. Please note that short captions are centered, while long ones are justified by the macro package automatically.](example-image-duck){#fig-duck width=100% fig-pos='t'} -->
+
+\begin{theorem}
+This is a sample theorem. The run-in heading is set in bold, while
+the following text appears in italics. Definitions, lemmas,
+propositions, and corollaries are styled the same way.
+\end{theorem}
+<!-- %
+% the environments 'definition', 'lemma', 'proposition', 'corollary',
+% 'remark', and 'example' are defined in the LLNCS documentclass as well.
+% -->
+\begin{proof}
+Proofs, examples, and remarks have the initial word in italics,
+while the following text appears in normal font.
+\end{proof}
+
+<!-- Using Quarto theorem environments does not work, see here: https://github.com/pat-alt/quarto-ecml/issues/1 -->
+<!-- ::: {#thm-sample}
+This is a sample theorem. The run-in heading is set in bold, while the following text appears in italics. Definitions, lemmas, propositions, and corollaries are styled the same way.
+:::
+
+::: {.proof}
+Proofs, examples, and remarks have the initial word in italics, while the following text appears in normal font.
+::: -->
+
+For citations of references, we prefer the use of square brackets and consecutive numbers. Citations using labels or the author/year
+convention are also acceptable. The following bibliography provides a sample reference list with entries for journal articles [@ref_article1], an LNCS chapter [@ref_lncs1], a book [@ref_book1], proceedings without editors [@ref_proc1], and a homepage [@ref_url1]. Multiple citations are grouped [@ref_article1;@ref_lncs1;@ref_book1], [@ref_article1;@ref_book1;@ref_proc1;@ref_url1].
+
+## Experiments
+
+### Experimental Setup
+
+### Experimental Results
+
+## Discussion
+
+## Conclusion
+
+Of course, authors have complete freedom on how they choose to structure their paper. Section headers from Introduction up to and including Conclusions are completely up to the discretion of the authors; use whichever structure you see fit. Title, Abstract, the credits environment, and References, however, are mandatory.
+
+\begin{credits}
+\subsubsection{\ackname} A bold run-in heading in small font size at the end of the paper is
+used for general acknowledgments, for example: This study was funded
+by X (grant number Y).
+
+\subsubsection{\discintname}
+It is now necessary to declare any competing interests or to specifically
+state that the authors have no competing interests. Please place the
+statement with a bold run-in heading in small font size beneath the
+(optional) acknowledgments,
+for example: The authors have no competing interests to declare that are
+relevant to the content of this article. Or: Author A has received research
+grants from Company W. Author B has received a speaker honorarium from
+Company X and owns stock in Company Y. Author C is a member of committee Z.
+\end{credits}
