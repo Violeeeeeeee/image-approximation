@@ -1,0 +1,17 @@
+experiment_name: "PolyEvo_Torch_v1"
+seed: 42
+device: "cuda"
+
+data:
+  target_path: "data/monalisa_128.jpg"
+  output_path: "mona2/"
+  resize_to: 128
+
+algorithm:
+  num_triangles: 100
+  population_size: 32
+  generations: 1000000
+
+  mutation_rate: 0.0015
+  mutation_scale: 30.0
+  survival_rate: 0.28
